@@ -20,8 +20,11 @@ const noteStyle={
 function Note(props) {
     return (
         <div style={noteStyle}>
-            <p style={{marginLeft: '5px', fontWeight: 'bold'}} contentEditable='true'>{props.title}</p>
-            <p style={{marginLeft: '5px'}} contentEditable='true' spellCheck='false'>{props.content}</p>
+            <p style={{marginLeft: '5px', fontWeight: 'bold'}}>{props.title}</p>
+            <p style={{marginLeft: '5px'}} spellCheck='false'>{props.content}</p>
+            <button onClick={()=>{
+                props.onClick(props.id);
+            }} style={{border: 'none', fontSize: '15px', textAlign:'end'}}>Delete</button>
         </div>
     )
 }

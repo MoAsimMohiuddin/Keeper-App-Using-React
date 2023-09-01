@@ -1,6 +1,7 @@
 import React from 'react';
 
-const buttonStyles={
+const buttonStyle=
+{
     fontFamily: 'cursive',
     display: 'block',
     width: '94vw',
@@ -8,11 +9,12 @@ const buttonStyles={
     marginTop: '1vw',
     border: 'none',
     padding: '5px',
+    backgroundColor: 'rgb(231, 231, 231)'
 }
 
-function Input() {
+function Input(props) {
     return (
-        <input type='button' value='Add' style={buttonStyles}/>
+        <input {...props} style={buttonStyle}/>
     );
 };
 

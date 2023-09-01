@@ -1,0 +1,10 @@
+.Add-button
+{
+    font-family: 'cursive';
+    display: 'block';
+    width: '94vw';
+    margin-left: '40px';
+    margin-top: '1vw';
+    border: 'none';
+    padding: '5px';
+}
